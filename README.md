@@ -13,7 +13,6 @@ cd - && rm -rf parent
 * To add the vendored dependencies to a git repository as a tar file:
 ```
 tar -cvzf vendor.tar.gz _vendor
-git lfs track "vendor.tar.gz"
 ```
 Then add vendor.tar.gz to your repository.
 

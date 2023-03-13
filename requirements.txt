@@ -39,4 +39,4 @@ hickle
 python-multipart
 evidently
 kfp
-.
+greenplum-python
