@@ -20,7 +20,7 @@ streamlit-autorefresh
 jupyterflow
 https://github.com/agapebondservant/ml-metrics-accelerator/zipball/main
 lz4
-pyyaml
+pyyaml==5.3.1
 prometheus-client
 protobuf # protobuf==3.20.0 # protobuf==3.19.5
 fastapi
@@ -41,3 +41,9 @@ evidently
 kfp==1.8.19
 greenplum-python
 pyservicebinding
+download_and_extract
+altair==4.0
+https://files.pythonhosted.org/packages/50/d5/f156d808c9cc59e7a8b87843a5313719d01eec7d3b17ca3f6b6f0fbee0f0/onnxruntime-1.15.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+#https://files.pythonhosted.org/packages/3e/ee/07d0857d53fc70a2041b7a42000cb6b5641e0b3133c238099756fa07cc9b/onnxruntime-1.15.1-cp310-cp310-macosx_10_15_x86_64.whl
+skl2onnx
+tf2onnx

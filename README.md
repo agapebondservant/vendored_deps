@@ -1,12 +1,21 @@
 ## Vendoring Python Dependencies
 
 ### Updating the _vendor folder
+* Install OS dependencies prior to starting:
+```
+brew install snappy; export CPPFLAGS="-I/usr/local/include -L/usr/local/lib" # on Mac
+sudo yum install csnappy-devel -y # on RPM-based
+sudo apt-get install libsnappy-dev # on DEB-based
+```
+
 * Using **pip**, store Python dependencies into local **_vendor** folder 
 (NOTE: You may need to manually remove failing dependencies from requirements.txt):
 ```
+export TARGET_ARCH=manylinux_2_17_x86_64 # or desired target architecture
+export TARGET_PY_VERSION=3.9
 git clone </git/clone/url/of/python/app> parent
 cd parent && rm -rf .git/ && cp ../requirements.txt . 
-pip install --target="../_vendor" --ignore-installed -r requirements.txt
+pip install --target="../_vendor" --ignore-installed --platform=$TARGET_ARCH --no-deps --python-version="$TARGET_PY_VERSION" -r requirements.txt
 cd - && rm -rf parent
 ```
 
