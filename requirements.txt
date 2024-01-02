@@ -32,7 +32,7 @@ tensorflow
 rsocket
 # asyncio==3.4.3
 python-snappy
-mlflow==2.4.1
+mlflow==2.7.0
 filelock==3.9.0
 pyarrow<7.0.0
 hickle
@@ -50,3 +50,20 @@ tf2onnx
 imbalanced-learn
 acryl-datahub[datahub-rest]
 shap
+###############################################
+# The following are required for PL/Container
+###############################################
+sqlparse
+packaging
+requests
+urllib3<2.0
+chardet
+certifi
+idna
+databricks_cli
+click
+six
+pytz
+entrypoints
+importlib_metadata
+zipp
